@@ -5,8 +5,6 @@ export default function handler(req, res) {
   if (req.method === "POST") {
     const { email, name, message } = req.body;
 
-    console.log(email, name, message);
-
     if (!isInputValid(email, name, message)) {
       res.status(422).json({ message: "Invalid input" });
       return;
