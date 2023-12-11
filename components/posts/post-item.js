@@ -11,7 +11,6 @@ export default function PostItem({ post }) {
     year: "numeric",
   });
   const imagePath = `/images/posts/${slug}/${image}`;
-  console.log(imagePath);
 
   return (
     <li className={classes.post}>
